@@ -93,13 +93,11 @@
                 android:layout_height="95dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="0.7"
-                android:background="@color/green"
                 android:src="@drawable/ic_launcher_foreground"
                 app:layout_constraintBottom_toTopOf="@id/phone"
                 app:layout_constraintEnd_toStartOf="@id/cambiar"
                 app:layout_constraintStart_toEndOf="@id/camara"
                 app:layout_constraintTop_toBottomOf="@+id/nickname"
-                app:tint="@color/black"
                 tools:layout_editor_absoluteX="188dp" />
 
             <Button
