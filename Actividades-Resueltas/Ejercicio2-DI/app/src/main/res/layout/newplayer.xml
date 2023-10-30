@@ -33,80 +33,126 @@
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/persona"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.25"
                     android:src="@drawable/persona_foreground" />
 
-                <EditText
-                    android:id="@+id/name"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TiLayoutName"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_weight="1"
                     android:ems="15"
-                    android:inputType="text"
-                    android:text="Name"
-                    android:textSize="20sp" />
+                    android:textSize="20sp">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center">
+                android:gravity="center"
+                android:layout_marginTop="10dp">
 
-                <EditText
-                    android:id="@+id/phonteicName"
-                    android:layout_width="310dp"
+                <ImageView
+                    android:id="@+id/personaNula1"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_gravity="end"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Phonetic name" />
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/persona_foreground"
+                    android:visibility="invisible" />
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TiLayoutPhoneticName"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:ems="15"
+                    android:textSize="20sp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phonteicName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Phonetic name"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/personaNula2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/persona_foreground"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TiLayoutNickName"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:ems="15"
+                    android:textSize="20sp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Nickname"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center">
-
-                <EditText
-                    android:id="@+id/nickname"
-                    android:layout_width="320dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="end"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Nickname" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/camara"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.25"
                     android:src="@drawable/camara_foreground" />
 
                 <ImageView
                     android:id="@+id/android"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:layout_weight="0.7"
+                    android:layout_weight="0.54"
                     android:background="@color/design_default_color_secondary"
                     android:src="@drawable/ic_launcher_foreground"
                     app:tint="@color/md_theme_dark_background" />
@@ -115,7 +161,7 @@
                     android:id="@+id/cambiar"
                     android:layout_width="40dp"
                     android:layout_height="50dp"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.3"
                     android:backgroundTint="@color/design_default_color_primary_variant"
                     android:text="CHANGE" />
             </TableRow>
@@ -123,14 +169,15 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/telefono"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:layout_margin="10dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.25"
                     android:src="@drawable/phone_foreground" />
 
                 <EditText
@@ -140,31 +187,42 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="text"
-                    android:text="Phone"
+                    android:hint="Phone"
                     android:textSize="20sp" />
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/mensaje"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.25"
                     android:src="@drawable/mail_foreground" />
 
-                <EditText
-                    android:id="@+id/email"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TiLayoutEmail"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="E-mail"
-                    android:textSize="20sp" />
+                    android:ems="15"
+                    android:textSize="20sp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="E-mail"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
         </TableLayout>

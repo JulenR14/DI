@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Preferencias">
+
+    <TextView
+        android:id="@+id/textViewEligeOpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Elige una opción :"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textViewEligeOpcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp">
+
+        <RadioButton
+            android:id="@+id/AngryBirds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angry Birds"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/DragonFly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dragon Fly"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/HillClimbingRacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hill Climbing Racing"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/PocketSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pocket Soccer"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/RadiantDefense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radiant Defense"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

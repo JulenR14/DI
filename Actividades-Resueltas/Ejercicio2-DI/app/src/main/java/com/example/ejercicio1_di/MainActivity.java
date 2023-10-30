@@ -18,13 +18,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button jugador = findViewById(R.id.button2);
+        Button preferencias = findViewById(R.id.button3);
 
-        jugador.setOnClickListener(v -> {
+        ejecutarBoton(jugador);
+        ejecutarBoton(preferencias);
 
-            Intent i = new Intent(this, NewPlayer.class);
+    }
+
+    public void ejecutarBoton(Button b){
+        b.setOnClickListener(v -> {
+            Intent i = new Intent(this, Preferencias.class);
             startActivity(i);
         });
-
     }
 
     @Override
