@@ -17,6 +17,9 @@ public class Plataformas extends AppCompatActivity {
         add("Estrategia");
         add("Rol");
         add("Simulacion");
+        add("Terror");
+        add("Gracia");
+        add("Comedia");
         add("Otros");
     }};
     private ArrayAdapter<String> adaptador;
