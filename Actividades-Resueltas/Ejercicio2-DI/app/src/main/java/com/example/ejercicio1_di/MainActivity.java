@@ -51,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Busqueda", Toast.LENGTH_LONG).show();
             return true;
         }
+
+        if(id == R.id.action_settings){
+            Intent i = new Intent(this, Plataformas.class);
+            startActivity(i);
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
 }
