@@ -13,6 +13,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Preferencias extends AppCompatActivity {
 
+    int valorPuntuacion = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,13 +22,39 @@ public class Preferencias extends AppCompatActivity {
 
         RatingBar ratingBar = findViewById(R.id.ratingBar);
         SeekBar seekBar = findViewById(R.id.seekBar);
+
+
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) FloatingActionButton fab = findViewById(R.id.fab);
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                //Método llamado cuando se llama el progreso de la RatingBar
+                valorPuntuacion = (int) rating;
+                seekBar.setProgress(valorPuntuacion);
             }
         });
-        
+
+        seekBar.setMax(5);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                valorPuntuacion = progress;
+                ratingBar.setRating(valorPuntuacion);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+
     }
 }
