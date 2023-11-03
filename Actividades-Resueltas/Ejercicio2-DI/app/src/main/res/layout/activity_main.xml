@@ -26,17 +26,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.32" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="280dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="28dp"
-        android:text="PLAY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="280dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            android:text="PLAY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="280dp"
             android:layout_height="47dp"
@@ -44,13 +44,13 @@
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:layout_editor_absoluteX="171dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             android:layout_width="280dp"
             android:layout_height="47dp"
             android:text="PREFERENCIES" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
             android:layout_width="280dp"
             android:layout_height="47dp"

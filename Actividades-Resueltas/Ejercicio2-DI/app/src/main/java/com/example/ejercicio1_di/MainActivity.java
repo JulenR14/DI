@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button jugar = findViewById(R.id.button);
         Button jugador = findViewById(R.id.button2);
         Button preferencias = findViewById(R.id.button3);
 
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
         preferencias.setOnClickListener(v -> {
             Intent i = new Intent(this, Preferencias.class);
+            startActivity(i);
+        });
+
+        jugar.setOnClickListener(v -> {
+            Intent i = new Intent(this, Play.class);
             startActivity(i);
         });
 
