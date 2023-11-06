@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Plataformas"
-    android:padding="10dp">
+    tools:context=".Plataformas">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
 
         <TextView
@@ -102,7 +102,9 @@
         android:layout_gravity="bottom"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
-        app:fabCradleVerticalOffset="10dp" />
+        app:fabCradleVerticalOffset="10dp"
+        app:fabAlignmentMode="center"
+        app:fabAnchorMode="cradle"/>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -111,6 +113,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/done_fill0_wght400_grad0_opsz24"
         app:layout_anchor="@id/ButtonBar"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        app:fabSize="normal"
+        app:elevation="8dp"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
