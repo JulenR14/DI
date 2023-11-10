@@ -1,6 +1,7 @@
 package com.example.ejercicio1_di;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -29,10 +30,6 @@ public class Plataformas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plataformas);
 
-        ListView lista = findViewById(R.id.listView);
-        adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, generos);
-
-        lista.setAdapter(adaptador);
 
     }
 }

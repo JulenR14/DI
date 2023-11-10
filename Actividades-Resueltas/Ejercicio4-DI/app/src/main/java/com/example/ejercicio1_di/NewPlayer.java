@@ -31,7 +31,7 @@ public class NewPlayer extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                texto.setText(spinner.getSelectedItem().toString());
             }
 
             @Override
