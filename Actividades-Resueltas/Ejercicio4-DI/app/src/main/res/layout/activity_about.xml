@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    tools:context=".About"
     android:background="@color/md_theme_dark_error"
     android:id="@+id/layoutAbout">
 
@@ -13,7 +12,7 @@
         <ImageView
             android:id="@+id/imagenAbout"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_margin="5dp"
             android:src="@mipmap/games_aircontrol" />
 
@@ -25,20 +24,22 @@
 
             <TextView
                 android:id="@+id/nombreAbout"
-                android:layout_width="224dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
                 android:text="María Mata"
-                android:textSize="25dp" />
+                android:textSize="25dp"
+                android:layout_margin="5dp"
+                android:gravity="start|center_vertical"/>
 
             <TextView
                 android:id="@+id/yearAbout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:text="2014" />
+                android:text="2014"
+                android:layout_margin="5dp"
+                android:gravity="start|center_vertical"/>
 
         </LinearLayout>
 

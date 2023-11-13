@@ -15,19 +15,6 @@ public class AboutViewHolder extends RecyclerView.ViewHolder{
     protected TextView yearview;
     protected LinearLayout layout;
 
-
-    public ImageView getImageview() {
-        return imageview;
-    }
-
-    public TextView getNameview() {
-        return nameview;
-    }
-
-    public TextView getYearview() {
-        return yearview;
-    }
-
     public AboutViewHolder(@NonNull View itemView) {
         super(itemView);
 

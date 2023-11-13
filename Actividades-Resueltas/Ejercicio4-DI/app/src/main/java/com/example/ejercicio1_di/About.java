@@ -30,10 +30,8 @@ public class About extends AppCompatActivity {
         aboutData.add(new ItemAbout("Ismael", "1586", R.drawable.image7));
         aboutData.add(new ItemAbout("Pedro", "1997", R.drawable.image8));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-
         RecyclerView reciclerView = findViewById(R.id.reciclerViewAbout);
-        reciclerView.setLayoutManager(layoutManager);
+        reciclerView.setLayoutManager(new LinearLayoutManager(this));
 
         AboutAdapter adapter = new AboutAdapter(aboutData, this);
 

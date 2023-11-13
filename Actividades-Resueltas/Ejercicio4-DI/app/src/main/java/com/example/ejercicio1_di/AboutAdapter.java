@@ -24,7 +24,8 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutViewHolder>{
     @NonNull
     @Override
     public AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_about, parent, false);
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.activity_about, parent, false);
         return new AboutViewHolder(view);
     }
 
@@ -40,6 +41,6 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutViewHolder>{
 
     @Override
     public int getItemCount() {
-        return 0;
+        return aboutData == null ? 0 : aboutData.size();
     }
 }
