@@ -6,12 +6,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ViewHolder extends RecyclerView.ViewHolder {
+public class GenerosViewHolder extends RecyclerView.ViewHolder {
     protected TextView textView;
 
-    public ViewHolder(@NonNull View itemView) {
+    public GenerosViewHolder(@NonNull View itemView) {
         super(itemView);
-        textView = itemView.findViewById(R.id.generoText);
+
+        textView = itemView.findViewById(R.id.textoGenero);
     }
 
 

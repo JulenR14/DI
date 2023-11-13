@@ -5,10 +5,79 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/generoText"
+        android:id="@+id/Plataformas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="TextView"
-        android:textSize="24sp" />
+        android:text="Plataforma : "
+        android:layout_margin="20dp"
+        android:textSize="30dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ps4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/pc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/xbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XBOX"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/wii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WII"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/wiiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIIU"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/tresds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3DS"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/x360"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X360"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Géneros : "
+        android:layout_margin="20dp"
+        android:textSize="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -4,35 +4,34 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class GenerosAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class GenerosAdapter extends RecyclerView.Adapter<GenerosViewHolder> {
 
-    private ArrayList<String> generos;
+    private List<String> generos;
     private Context cont;
 
-    public GenerosAdapter(ArrayList<String> generos, Context c){
+    public GenerosAdapter(List<String> generos, Context c){
         this.generos = generos;
         this.cont = c;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.generos, parent, false);
-        return new ViewHolder(view);
+    public GenerosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.text_item, parent, false);
+        return new GenerosViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull GenerosViewHolder holder, int position) {
         String genero = generos.get(position);
-        holder.textView.setText(genero);
+        holder.textView.setText(generos.get(position));
 
         holder.textView.setOnClickListener(view ->
                 Toast.makeText(cont, genero, Toast.LENGTH_SHORT).show());
