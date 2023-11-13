@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    tools:context=".About">
+    tools:context=".About"
+    android:background="@color/md_theme_dark_error"
+    android:id="@+id/layoutAbout">
 
 
         <ImageView
+            android:id="@+id/imagenAbout"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:src="@mipmap/games_aircontrol" />
 
         <LinearLayout
@@ -20,18 +24,18 @@
             android:layout_gravity="center">
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:id="@+id/nombreAbout"
+                android:layout_width="224dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
-                android:textSize="25dp"
-                android:text="María Mata"/>
+                android:text="María Mata"
+                android:textSize="25dp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/yearAbout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
                 android:text="2014" />

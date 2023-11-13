@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button jugar = findViewById(R.id.button);
         Button jugador = findViewById(R.id.button2);
         Button preferencias = findViewById(R.id.button3);
+        Button about = findViewById(R.id.button4);
 
         jugador.setOnClickListener(v -> {
             Intent i = new Intent(this, NewPlayer.class);
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         jugar.setOnClickListener(v -> {
             Intent i = new Intent(this, Play.class);
+            startActivity(i);
+        });
+
+        about.setOnClickListener(v -> {
+            Intent i = new Intent(this, About.class);
             startActivity(i);
         });
 
