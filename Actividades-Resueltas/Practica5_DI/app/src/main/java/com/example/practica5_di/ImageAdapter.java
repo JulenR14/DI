@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageSwitcher;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,11 +14,8 @@ import java.util.List;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageViewHolder>{
     private List<Integer> imagenes;
-    private Context context;
-
-    public ImageAdapter(List<Integer> imagenes, Context context) {
+    public ImageAdapter(List<Integer> imagenes) {
         this.imagenes = imagenes;
-        this.context = context;
     }
 
     @NonNull
@@ -31,12 +29,18 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageViewHolder>{
     public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
         int imagen = imagenes.get(position);
         holder.imagenview.setImageResource(imagen);
-        holder.imagenview.setOnClickListener(view ->
-                Toast.makeText(context, "PRUEBA", Toast.LENGTH_SHORT).show());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageSwitcher imageSwitcher = v.getRootView().findViewById(R.id.imageSwitcher);
+                imageSwitcher.setImageResource(imagen);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return imagenes.size();
     }
 }

@@ -5,6 +5,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
+import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +32,20 @@ public class MainActivity extends AppCompatActivity {
         imagenes.add(R.drawable.image9);
 
         RecyclerView recyclerView = findViewById(R.id.reciclerViewImagen);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        ImageAdapter adapter = new ImageAdapter(imagenes, this);
+        ImageAdapter adapter = new ImageAdapter(imagenes);
 
         recyclerView.setAdapter(adapter);
+
+        ImageSwitcher IS = findViewById(R.id.imageSwitcher);
+
+        IS.setFactory(new ViewSwitcher.ViewFactory() {
+            @Override
+            public View makeView() {
+                ImageView imageView = new ImageView(getApplicationContext());
+                return imageView;
+            }
+        });
     }
 }
