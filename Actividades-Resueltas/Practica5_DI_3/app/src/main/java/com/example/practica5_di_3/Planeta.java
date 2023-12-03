@@ -14,6 +14,8 @@ public class Planeta {
         this.densidad = densidad;
     }
 
+    public Planeta() {}
+
     public String getPlaneta() {
         return planeta;
     }
