@@ -2,9 +2,13 @@ package com.example.pruebaexamen1_di;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toolbar;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Base_Theme_temaSiActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -28,11 +33,16 @@ public class MainActivity extends AppCompatActivity {
             add(new Card(R.drawable.image9, "Imagen 9"));
         }};
 
+        FloatingActionButton fabgo = findViewById(R.id.fabgo);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
         CardAdapter adaptador = new CardAdapter(datos);
 
         recyclerView.setAdapter(adaptador);
+
+        fabgo.setOnClickListener(v -> {
+            setContentView(R.layout.activity_second);
+        });
     }
 }
