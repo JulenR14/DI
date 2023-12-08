@@ -14,11 +14,11 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false"
-            android:theme="@style/Theme.PruebaExamen1_DI_NoActionBar" />
+            android:theme="@style/MyActivityTheme"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.PruebaExamen1_DI_ActionBar"
+            android:theme="@style/AppTheme"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

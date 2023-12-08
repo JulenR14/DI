@@ -1,17 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.temaNoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/primarycolor</item>
         <item name="colorOnPrimary">@color/darkprimarycolor</item>
         <item name="colorSecondary">@color/secundaricolor</item>
     </style>
 
-    <style name="Base.Theme.temaSiActionBar" parent="Theme.Material3.DayNight">
-        <item name="colorPrimary">@color/primarycolor</item>
-        <item name="colorOnPrimary">@color/darkprimarycolor</item>
-        <item name="colorSecondary">@color/secundaricolor</item>
+    <style name="MyActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF0000</item>
+        <item name="colorOnPrimary">#FFC107</item>
+        <item name="colorSecondary">#FD2212</item>
     </style>
-    <style name="Theme.PruebaExamen1_DI_NoActionBar" parent="Base.Theme.temaNoActionBar" />
-    <style name="Theme.PruebaExamen1_DI_ActionBar" parent="Base.Theme.temaSiActionBar" />
+
+    <style name="Theme.PruebaExamen1_DI_ActionBar" parent="AppTheme"></style>
+    <style name="Theme.PruebaExamen1_DI_NoActionBar" parent="MyActivityTheme"></style>
 </resources>
