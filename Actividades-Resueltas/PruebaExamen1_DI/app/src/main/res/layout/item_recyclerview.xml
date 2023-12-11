@@ -51,7 +51,7 @@
                         android:background="#4F000000"
                         android:textSize="10dp"
                         android:text="ACCEPT"
-                        android:textAlignment="textStart"
+                        android:textAlignment="center"
                         android:textColorLink="#000000" />
 
                     <Button
@@ -61,7 +61,7 @@
                         android:layout_weight="1"
                         android:textSize="10dp"
                         android:text="CANCEL"
-                        android:textAlignment="textStart"
+                        android:textAlignment="center"
                         android:backgroundTint="@color/black"
                         android:background="#4F000000"/>
                 </LinearLayout>
