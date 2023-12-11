@@ -36,7 +36,6 @@
             android:text="St. name"
             android:textSize="20sp" />
     </LinearLayout>
-
     <Button
         android:id="@+id/favorito"
         android:layout_width="match_parent"
