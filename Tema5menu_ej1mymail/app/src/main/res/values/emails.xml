@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emails">
+        <item>julen@gmail.com</item>
+        <item>alejandroSanchez@gmail.com</item>
+        <item>charlesArrudaSatos@gmail.com</item>
+    </string-array>
+</resources>
