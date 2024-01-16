@@ -20,4 +20,9 @@
         android:name="com.julen.tema5menu_ej2.fragment_slideshow"
         android:label="fragment_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_galeria"
+        android:name="com.julen.tema5menu_ej2.galeria"
+        android:label="activity_galeria"
+        tools:layout="@layout/activity_galeria" />
 </navigation>
