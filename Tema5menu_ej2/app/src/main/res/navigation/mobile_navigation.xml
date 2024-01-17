@@ -11,18 +11,13 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.julen.tema5menu_ej2.fragment_gallery"
-        android:label="fragment_gallery"
-        tools:layout="@layout/fragment_gallery" />
-    <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.julen.tema5menu_ej2.fragment_slideshow"
         android:label="fragment_slideshow"
         tools:layout="@layout/fragment_slideshow" />
-    <activity
+    <fragment
         android:id="@+id/nav_galeria"
         android:name="com.julen.tema5menu_ej2.galeria"
-        android:label="activity_galeria"
-        tools:layout="@layout/activity_galeria" />
+        android:label="fragment_galeria"
+        tools:layout="@layout/fragment_galeria" />
 </navigation>

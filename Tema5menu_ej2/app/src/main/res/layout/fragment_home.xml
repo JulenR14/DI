@@ -3,15 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="horizontal"
     tools:context=".fragment_home">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Home"
         android:textSize="40sp"
         android:gravity="center"/>
 
-</LinearLayout>
+    <!--  <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerViewHome"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@android:color/white"/>-->
+
+ </LinearLayout>
