@@ -10,8 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.julen.tema5menu_ej2.databinding.FragmentHomeBinding;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +19,6 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class fragment_home extends Fragment {
-
-    FragmentHomeBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
