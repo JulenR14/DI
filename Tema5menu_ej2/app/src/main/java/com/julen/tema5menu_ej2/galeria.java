@@ -27,6 +27,10 @@ public class galeria extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        binding = FragmentGaleriaBinding.inflate(inflater, container, false);
+        binding.getRoot();
+        binding.textView.setText("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
         return inflater.inflate(R.layout.fragment_galeria, container, false);
     }
 }
