@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_fragment, fragment)
                 .commit();
-        
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             Fragment fragment;
             @Override
