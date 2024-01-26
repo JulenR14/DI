@@ -20,7 +20,14 @@ public class SectionsPagerAdapter extends FragmentStateAdapter {
     }
     @Override
     public Fragment createFragment(int position) {
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position) {
+            case 0:
+                return new Fragment1();
+            case 1:
+                return new Fragment2();
+            default:
+                return new Fragment3();
+        }
     }
 
 }
