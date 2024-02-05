@@ -8,6 +8,11 @@ import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+/**
+ * Clase que representa la actividad principal de la aplicación
+ * @autor Julen Redondo Perez
+ * @version 1.0
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

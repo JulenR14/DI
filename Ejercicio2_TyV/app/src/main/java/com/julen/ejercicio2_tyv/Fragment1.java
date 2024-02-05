@@ -7,6 +7,11 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+/**
+ * Clase que representa el fragmento 1 de la aplicación
+ * @author Julen Redondo Perez
+ * @version 1.0
+ */
 public class Fragment1 extends Fragment {
     public Fragment1() {
         // Required empty public constructor

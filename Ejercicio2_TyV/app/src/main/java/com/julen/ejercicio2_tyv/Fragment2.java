@@ -14,6 +14,11 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase que representa el fragmento 2 de la aplicación
+ * @author Julen Redondo Perez
+ * @version 1.0
+ */
 public class Fragment2 extends Fragment {
 
     public Fragment2() {

@@ -14,6 +14,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * Clase que adapta la lista de tarjetas a un RecyclerView
+ * @author Julen Redondo Perez
+ * @version 1.0
+ * @see Card
+ */
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder>{
 
     private List<Card> cards;
@@ -43,6 +49,11 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         return new CardViewHolder(v);
     }
 
+    /**
+     * Método que se encarga de mostrar la tarjeta en el RecyclerView
+     * @param holder ViewHolder que se encarga de mostrar la tarjeta
+     * @param position Posición de la tarjeta en la lista
+     */
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         holder.bindCard(cards.get(position));
