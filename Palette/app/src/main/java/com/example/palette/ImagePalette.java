@@ -3,6 +3,9 @@ package com.example.palette;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +20,14 @@ public class ImagePalette extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+
         setContentView(R.layout.activity_image_palette);
+
+        Fade explodeAnimation = new Fade();
+        explodeAnimation.setDuration(1000);
+        getWindow().setEnterTransition(explodeAnimation);
+        getWindow().setExitTransition(new Slide());
 
         // Obtén la imagen seleccionada del Intent
         int selectedImage = getIntent().getIntExtra("image_resource", 0);
