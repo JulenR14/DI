@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983549561472",
+    "project_id": "ejercicio2-tyv",
+    "storage_bucket": "ejercicio2-tyv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983549561472:android:e2b9fd8f460b583989b465",
+        "android_client_info": {
+          "package_name": "com.julen.ejercicio2_tyv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg8jPVforLvaDk1bs3o7j4qtTcGz-N5mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
